@@ -1,0 +1,195 @@
+/* -------------------------------HEADER------------------------- */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(67, 67, 67);
+    color: #ffffff;
+}
+.titulo{
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+.navbar-links li{
+    list-style: none;
+
+}
+.navbar-links li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1rem;
+    display: block;
+ 
+}
+.navbar-links li:hover{
+    background-color: rgb(107, 107, 107);
+    transition: 2.5s;
+    
+
+}
+.menu-button{
+    position: absolute;
+    top:.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+}
+.menu-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width:400px){
+    .menu-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li{
+        text-align: center;
+
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}
+
+
+
+
+
+header {
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: hidden;
+    background-color: rgb(53, 66, 88);
+    
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+header nav-menu link {
+    color: #ffffff;
+}
+
+header nav .logo {
+    font-size: 30px;
+    /* color: rgb(31, 32, 33); */
+    color: rgb(8, 6, 39);
+}
+header nav .navspan {
+    font-size: 25px;
+    color: rgb(99, 132, 165);
+}
+
+header nav-menu {
+    display: flex;
+}
+
+header nav item {
+    padding: 1rem;
+    font-weight: 500;
+}
+
+nav-item .active {
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+header nav-item a:hover {
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width:940px) {
+    header {
+        max-width: 100%;
+        background-color: rgba(0, 0, 0, .9);
+    }
+
+    header nav {
+        max-width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, .9);
+        width: 100%;
+        height: 90vh;
+        z-index: 999;
+        text-align: center;
+        transition: .3s;
+    }
+
+    nav-menu.active {
+        left: 0;
+    }
+
+    nav-item {
+        margin: 1rem 0;
+    }
+
+    header navbar img {
+        width: 150px;
+    }
+}
