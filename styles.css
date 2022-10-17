@@ -6,23 +6,19 @@
 body{
     margin: 0;
     padding: 0;
-    
-}
+    background: linear-gradient(to bottom right, #34438dca, #4b6975be, rgba(41, 35, 112, 0.531), rgba(243, 243, 243, 0.638));
+    overflow-x: hidden
+    }
 
 header{
- 
-     position: fixed;
-    
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
     transition: .3s ease-in;
     overflow: hidden;
-  
-
-
-}
+    }
 
 .navbar{
     display: flex;
@@ -30,36 +26,30 @@ header{
     align-items: center;
     background-color: rgb(67, 67, 67);
     color: #ffffff;
- 
-}
+    }
 .titulo{
     font-size: 1.5rem;
     margin: .5rem;
-}
+    }
 
 .navbar-links ul{
     margin: 0;
     padding: 0;
     display: flex;
-
-}
+    }
 .navbar-links li{
     list-style: none;
-
-}
+    }
 .navbar-links li a{
     text-decoration: none;
     color: #ffffff;
     padding: 1rem;
     display: block;
- 
-}
+    }
 .navbar-links li:hover{
     background-color: rgb(107, 107, 107);
     transition: 2.5s;
-    
-
-}
+    }
 .menu-button{
     position: absolute;
     top:.75rem;
@@ -69,8 +59,7 @@ header{
     justify-content: space-between;
     width: 30px;
     height: 21px;
-
-}
+    }
 .menu-button .bar{
     height: 3px;
     width: 100%;
@@ -111,56 +100,303 @@ header{
 
 main{
     width: 79%;
-   
-        background: #ccc;
-        float: left;
-        overflow: auto;
-        padding-bottom: 0px;
-        padding-top: 0px;
+    float: left;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 main section{
     height: 100vh;
     
 }
 main section .sectionDiv1{
-background-color: red;
 height: 100vh;
 }
-main section div p{
-   
-    margin-top: 0%;
-color:white;
-font-size: 40px;
-line-height: 50vh
-}
+
 main section .sectionDiv2{
-background-color: rgb(107, 50, 186);
 height: 100%;
 }
 main section .sectionDiv3{
-background-color: rgb(36, 164, 47);
 height: 100%;
 }
 aside{
-float: right;
+    float: right;
     border: 1px solid red;
     width: 19%;
     border: 1px solid red;
+    background: #286af0;
+    height: 100%;;
    
 }
 aside div{
    
-    margin-top:100px;
+    margin-top:52vh;
+    height: 50vh;
 
 }
 footer{
-position: relative;
-    margin-top: -50px;
-    height: 40px;
+    position: relative;    
+    bottom: 0;
+    height: 100vh;
     padding: 5px 0px;
     clear: both;
     background: #286af0;
     text-align: center;
     color: #fff;
 }
+/* ---------------------------Home----------------------------- */
+.checklist-servicio{
+    position:static;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+/* ------------------------- HOME ANIMATION-------------------------- */
+.area {
+    position: static;
+    width: 100%;
+    height: 100vh;
+    top: 0%;
+    background: linear-gradient(to bottom right, #34438dca, #4b6975be, rgba(41, 35, 112, 0.531), rgba(243, 243, 243, 0.638));
+}
+
+.circles {
+    /* position: static; */
+    margin-top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+/* -----------------------PRODUCT------------------------------- */
+.divProduct {
+    width: 90%;
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 40px auto 100px auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 80px;
+        justify-content: center;
+            object-fit: cover;
+   margin-top:30%;
+}
+
+.divProduct .productos {
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.divProduct .productos .titulo {
+    font-size: 16px;
+    font-weight: 600;
+   
+   
+}
+.divProduct .productos .price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 1s;
+     margin-top: -17%;
+    
+    
+}
+.divProduct .productos .titulo:hover,.divProduct .productos .price:hover {
+color: rgb(66, 66, 66);
+}
+
+.divProduct .productos .poster {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+    
+
+.paginacion {
+    /* position: fixed; */
+    position: relative;
+    margin-bottom: 50px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.paginacion button {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    background: #646464;
+    color: #fff;
+    border-radius: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: .3s ease all;
+}
+
+.paginacion button:hover {
+    background: #282828;
+}
+/* -------------------------------PRODUCT ANIMATION------------------------ */
+span {
+    position: relative;
+    color: #fff;
+    opacity: 0;
+    transition: all 800ms linear;
+    z-index: 10;
+}
+.productos:hover span {
+    opacity: 1;
+}
+.lineTop,
+.lineLeft {
+    left: 10;
+    top: 10PX;
+    position: relative;
+    background: #fff;
+    transition: all 800ms linear;
+}
+
+.lineTop {
+    width: 3px;
+    height: 0;
+    left: 20%;
+}
+
+.productos:hover .lineTop {
+    height: 100%;
+}
+
+.lineLeft {
+    width: 0;
+    height: 4px;
+    top: 90%
+}
+
+.productos:hover .lineLeft {
+    width: 100%;
+}
+
+/* -----------------------------PRODUCT--------------------- */
+H3{
+    text-align: center;
+}
+
+
+
 

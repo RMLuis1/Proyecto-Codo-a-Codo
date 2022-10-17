@@ -7,11 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" >
     <script src="index.js" defer></script>
+    <script src="api.js" defer></script>
 </head>
 <body>
+    
     <header>
    <nav class="navbar"> 
-    <div class="titulo">Proyect</div>
+    <div class="titulo"><a href="#area">Proyect</a></div>
     <a href="#" class="menu-button">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -28,18 +30,71 @@
    </nav>
 </header>
    <main>
-       <section><div class="sectionDiv1" id="home"><p>home</p></div></section>
-        <section><div class="sectionDiv3" id="product"><p>product</p>
-        
-        </div></section>
-       <section><div class="sectionDiv2"  id="about"  ><p>about</p></div></section>
+   
+       <section>
+        <h2 class="subtitulo">Nuestros Servicios</h2>
+        <div class="contenedor-servicio" id="home">
+            <div class="checklist-servicio">
+                <div class="service">
+                    <h3><span>1</span>Diseño web</h3>
+                    <p> jasjdajbsdjabsdjas jasdasdhasdja jasdjasdjasdljnasdnasjdasjl</p>
+                </div>
+                    <div class="service">
+                        <h3><span>2</span>Diseño web</h3>
+                        <p> jasjdajbsdjabsdjas jasdasdhasdja jasdjasdjasdljnasdnasjdasjl</p>
+                    </div>
+                        <div class="service">
+                            <h3><span>3</span>Diseño web</h3>
+                            <p> jasjdajbsdjabsdjas jasdasdhasdja jasdjasdjasdljnasdnasjdasjl</p>
+                        </div>
+            </div>
+
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        </section>
+        <section class="galery">
+            <!-- galeria -->
+        <div class="sectionDiv3" id="product"> 
+            <div id="divProductos" class="divProduct">
+            </div>
+            <!-- contenedor -->
+            <div class="contenedor">
+                <h2 class="subtitulo">galeria</h2>
+                <div class="contenedor-galeria">
+
+                </div>
+            </div>
+
+        </div>
+        </section>
+       <section>
+            <div class="sectionDiv2"  id="about"  >
+            <!-- imagen-light -->
+
+            </div>
+        </section>
     </main>
     <aside>
         <div>1</div>
         <div>2</div>
         <div>3</div>
     </aside>
+    <div class="paginacion">
+        <button id="btnAnterior">Anterior</button>
+        <button id="btnSiguiente">Siguiente</button>
+    </div>
    <footer id="footer">footer</footer>
-
+ 
 </body>
 </html>
