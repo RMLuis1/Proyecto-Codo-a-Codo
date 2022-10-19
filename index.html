@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Net Shop</title>
     <link rel="stylesheet" href="styles.css" >
     <script src="index.js" defer></script>
     <script src="api.js" defer></script>
+    <!-- Our project just needs Font Awesome Solid + Brands -->
+    <script src="https://kit.fontawesome.com/02e94aa0a0.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     
     <header>
    <nav class="navbar"> 
-    <div class="titulo"><a href="#area">Proyect</a></div>
+    <div class="titulo"><img class="imgTitulo" src="./imagenes/Net Shop-PhotoRoom.png" /></div>
     <a href="#" class="menu-button">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -29,23 +32,27 @@
     </div>
    </nav>
 </header>
+
    <main>
    
-       <section>
-        <h2 class="subtitulo">Nuestros Servicios</h2>
-        <div class="contenedor-servicio" id="home">
-            <div class="checklist-servicio">
+       <section id="home">
+         <!-- <div class="contenedor-servicio" > -->
+            <div class="checklist-servicio" >
+                <img class="imgHome" src="./imagenes/Logo-PhotoRoom.png" />
                 <div class="service">
                     <h3><span>1</span>Diseño web</h3>
                     <p> jasjdajbsdjabsdjas jasdasdhasdja jasdjasdjasdljnasdnasjdasjl</p>
+                    <i class="fa-regular fa-credit-card"></i>
                 </div>
                     <div class="service">
-                        <h3><span>2</span>Diseño web</h3>
-                        <p> jasjdajbsdjabsdjas jasdasdhasdja jasdjasdjasdljnasdnasjdasjl</p>
+                        <h3><span>2</span>Envio a todo el Pais</h3>
+                        <p>cooce nuestras promocioes de envio</p><i class="fa-solid fa-truck"></i>
                     </div>
                         <div class="service">
                             <h3><span>3</span>Diseño web</h3>
                             <p> jasjdajbsdjabsdjas jasdasdhasdja jasdjasdjasdljnasdnasjdasjl</p>
+                        <i class="fa-solid fa-cart-shopping"></i>
+
                         </div>
             </div>
 
@@ -61,26 +68,43 @@
                 <li></li>
                 <li></li>
             </ul>
-        </div>
+        <!-- </div> -->
         </section>
-        <section class="galery">
+
+        <section class="galery" id="product">
             <!-- galeria -->
-        <div class="sectionDiv3" id="product"> 
+        <div class="sectionDiv3" > 
             <div id="divProductos" class="divProduct">
-            </div>
-            <!-- contenedor -->
-            <div class="contenedor">
-                <h2 class="subtitulo">galeria</h2>
-                <div class="contenedor-galeria">
-
-                </div>
-            </div>
-
+            </div>     
+            
         </div>
         </section>
-       <section>
-            <div class="sectionDiv2"  id="about"  >
-            <!-- imagen-light -->
+
+       <section id="about">
+            <div class="sectionDiv2"    >
+            <div class="aboutSer">
+                <h3><span>1</span>Quienes somos?</h3>
+                <p> La empresa de tecnología líder en comercio electrónico y soluciones fintech de América Latina. Nuestro propósito es
+                democratizar el comercio y los servicios financieros para transformar la vida de millones de personas en la región.</p>
+                <i class="fa-regular fa-credit-card"></i>
+            </div>
+            <div class="aboutSer">
+                <h3><span>2</span>Lo que hacemos</h3>
+                <p>A través del comercio electrónico, estamos democratizando la forma de comprar y vender, brindando igualdad de
+                oportunidades a grandes y pequeños vendedores e integrando soluciones que hacen más sencillos, seguros y eficientes
+                todos los procesos.</p><i class="fa-solid fa-truck"></i>
+            </div>
+            <div class="aboutSer">
+                <h3><span>3</span>Inovamos</h3>
+                <p>Tenemos una sólida historia de innovación y desarrollo en el marketplace y estamos volcando nuestra experiencia y
+                nuestra capacidad tecnológica al mundo de las finanzas, la logística y el almacenamiento.
+                
+                Son sectores que tienen grandes desafíos por delante y creemos que las soluciones inclusivas y sustentables llegarán de
+                la mano de las nuevas tecnologías. Podemos ser disruptivos porque entendemos los problemas como oportunidades y estamos
+                dispuestos a asumir los riesgos que nos presenta nuestra región</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+            
+            </div>
 
             </div>
         </section>
