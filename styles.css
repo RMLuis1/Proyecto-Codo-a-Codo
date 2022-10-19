@@ -77,7 +77,7 @@ header{
     border-radius: 10px;
 }
 
-@media (max-width:400px){
+@media (max-width:800px){
     .menu-button{
         display: flex;
     }
@@ -110,11 +110,7 @@ header{
 /* -----------------------------   html----------------------------- */
 main{
     width: 79%;
-    /* float: left; */
-    
-    /* max-height: max-content; */
-    /* display: inline-block */
-}
+    }
 
 #home{
 height: 90vh;
@@ -127,23 +123,8 @@ height: 100vh;
 main section .sectionDiv3{
 height: 100%;
 }
-aside{
-    float: right;
-    border: 1px solid red;
-    width: 19%;
-    border: 1px solid red;
-    background: #666666;
-    height: 100vh;
-   
-}
-aside div{
-   
-    /* margin-top:52vh; */
-    /* height: 30vh; */
 
-}
 footer{
-    position: relative;    
     margin-bottom: 0;
     height: 100vh;
     width: 100%;
@@ -175,8 +156,7 @@ text-align: center;
     justify-content: space-between;
     align-items: center;
     margin-left: 10%;
-    /* margin-top: 50%; */
-}
+  }
 .service{
     max-width:35%;
     height: 150px;
@@ -197,7 +177,6 @@ text-align: center;
    top: 30%;
     left: 0;
     width: 100%;
-    /* height: 100vh; */
     overflow: hidden;
 }
 
@@ -311,24 +290,74 @@ text-align: center;
     height: 100vh;
     position: relative;
 }
+/* -------H2 ANIMATION----- */
+.h2productos{
+    position: relative;
+    top: 150px;
+    left: 40%;
+    color: #fffbf1;
+        text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing:50px;
+      
+    
+        transform: translateX(0%) translateY(0%);
+}
+.h2productos:before,
+.h2productos:after {
+    content: '';
+    padding: .5em .1em;
+    position: relative;
+    left: 0%;
+    width: 40%;
+    top: 10%;
+    display: block;
+    border: 8px solid rgb(178, 178, 178);
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+.h2productos:before {
+    border-color: #bababa #8d8d8d rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: 10;
+}
+
+.h2productos:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #c9c9c9 #b7b7b7;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+@keyframes tipsy {
+    0%{
+        transform: translateX(0%) translateY(0%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(0%) translateY(0%) rotate(360deg);
+    }
+}
+/* ------------------------------------ */
 .divProduct {
-    width: 90%;
+    width: 100%;
     max-width: 100vw;
     max-height: 100vh;
-    margin: 40px 0 100px auto;
+    margin: 10px 0 0px auto;
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fill, 240px);
-    gap: 80px;
+    gap: 0px;
     justify-content: center;
     object-fit: cover;
         }
         
         .divProduct .productos {
+            position: relative;
+            justify-items: center;
             text-align: center;
             margin: 10px;
             cursor: pointer;
-            margin-top:30%;
+            margin-top:140px;
+            left: 50%;
             max-height: 100vh;
 }
 
@@ -353,21 +382,20 @@ color: rgb(66, 66, 66);
 .divProduct .productos .poster {
     width: 100%;
     height: 200px;
-    margin-bottom: 10px;
     border-radius: 15px;
 }
 
     
 
 .paginacion {
-    /* position: fixed; */
-    position: relative;
-    margin-bottom: 50px;
+    position: absolute;
     width: 20%;
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 10px;
+    margin-top: 0%;
+    left: 50%;
 }
 
 .paginacion button {
@@ -392,25 +420,39 @@ color: rgb(66, 66, 66);
 }
 
 /* -----------------------------PRODUCT--------------------- */
-H3{
+/* H3{
     text-align: center;
-}
+} */
 /* ---------------------------------ABOUT------------------------- */
 
 #about {
-    position:absolute;
+    position:relative;
     height: 100vh;
-    width: 80vw;
-    float: right;
+    width: 100vw;
     text-align: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, .15);
     backdrop-filter: blur(1px);
    
 }
-
-main section .sectionDiv2 {
-    height: 100%;
+.aboutH2{
+    position: relative;
+        top: 100px;
+        /* width: auto; */
+        left: 0%;
+        /* text-align: center; */
+        /* justify-content: center; */
+        color: #fffbf1;
+        text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: 40px;
+        border-bottom: 1px solid white;
+}
+ .sectionDiv2 {
+    height: 100vh;
+    width: 100vw;
     display: grid;
         grid-template-columns: repeat(auto-fill, 310px);
         gap: 50px;
@@ -422,6 +464,131 @@ main section .sectionDiv2 {
    max-width: 250px;
    font-size: 1.5re;
 }
+/* --------------------------  PROMOCIONES------------------------- */
+#promos{
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+}
+.promoH2{
+    position: relative;
+    top:100px;
+    left: 10%;
+       color: #fffbf1;
+        text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+        font-size: 2rem;
+        font-weight: bold;
+        text-decoration: none;
+        letter-spacing: 40px;
+        border-bottom: 1px solid white;
+}
+/* -------CAROUSEL----- */
+
+.carousel {
+    top:20%;
+    max-width: 90vh;
+    position: relative;
+    margin:auto;
+    left: 10%;
+}
+
+
+.divImg {
+    display: none;
+}
+.imgCarousel{
+    width: 400px;
+    height: 450px;
+    border-radius: 10%;
+}
+
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #020101;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.numbertext {
+    color: #000000;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 5px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(8, 8, 8);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 1s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #1000bf;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+
+
+
 
 
 

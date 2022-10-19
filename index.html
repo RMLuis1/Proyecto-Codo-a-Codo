@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css" >
     <script src="index.js" defer></script>
     <script src="api.js" defer></script>
+    <script src="carousel.js" defer></script>
     <!-- Our project just needs Font Awesome Solid + Brands -->
     <script src="https://kit.fontawesome.com/02e94aa0a0.js" crossorigin="anonymous"></script>
 
@@ -24,10 +25,11 @@
     </a>
     <div class="navbar-links">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#product">Product</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#footer">Contact</a></li>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#product">Productos</a></li>
+            <li><a href="#about">Sobre Nosotros</a></li>
+            <li><a href="#promos">Promociones</a></li>
+            <li><a href="#footer">Contacto</a></li>
         </ul>
     </div>
    </nav>
@@ -74,28 +76,34 @@
         <section class="galery" id="product">
             <!-- galeria -->
         <div class="sectionDiv3" > 
+            <h2 class="h2productos">Productos</h2>
             <div id="divProductos" class="divProduct">
             </div>     
+            <div class="paginacion">
+                <button id="btnAnterior">Anterior</button>
+                <button id="btnSiguiente">Siguiente</button>
+            </div>
             
         </div>
         </section>
 
        <section id="about">
+        <h2 class="aboutH2">Nuestra Empresa</h2>
             <div class="sectionDiv2"    >
             <div class="aboutSer">
-                <h3><span>1</span>Quienes somos?</h3>
+                <h3><span><i class="fa-solid fa-check"></i></span>Quienes somos?</h3>
                 <p> La empresa de tecnología líder en comercio electrónico y soluciones fintech de América Latina. Nuestro propósito es
                 democratizar el comercio y los servicios financieros para transformar la vida de millones de personas en la región.</p>
                 <i class="fa-regular fa-credit-card"></i>
             </div>
             <div class="aboutSer">
-                <h3><span>2</span>Lo que hacemos</h3>
+                <h3><span><i class="fa-solid fa-check"></i></span>Lo que hacemos</h3>
                 <p>A través del comercio electrónico, estamos democratizando la forma de comprar y vender, brindando igualdad de
                 oportunidades a grandes y pequeños vendedores e integrando soluciones que hacen más sencillos, seguros y eficientes
                 todos los procesos.</p><i class="fa-solid fa-truck"></i>
             </div>
             <div class="aboutSer">
-                <h3><span>3</span>Inovamos</h3>
+                <h3><span><i class="fa-solid fa-check"></i></span>Inovamos</h3>
                 <p>Tenemos una sólida historia de innovación y desarrollo en el marketplace y estamos volcando nuestra experiencia y
                 nuestra capacidad tecnológica al mundo de las finanzas, la logística y el almacenamiento.
                 
@@ -108,16 +116,46 @@
 
             </div>
         </section>
+        <section id="promos">
+            <h2 class="promoH2">Promociones</h2>
+          
+            <div class="carousel">
+            
+                
+                <div class="divImg fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img class="imgCarousel" src="./imagenes/44.Accesorios_que_todo_hombre_debe_tener_en_su_guardarropa.jpeg" style="width:100%">
+                    <div class="text">Accesorios de hombre 50% de descuento en la segunda unidad</div>
+                </div>
+                
+                <div class="divImg fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img class="imgCarousel" src="./imagenes/accesorios-modernos-de-la-mujer.jpeg" style="width:100%">
+                    <div class="text">Accesorios de mujer 50% de descueto</div>
+                </div>
+                
+                <div class="divImg fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img class="imgCarousel" src="./imagenes/pulseras.jpeg" style="width:100%">
+                    <div class="text">Pulseras 30% off</div>
+                    </div>
+            
+              
+                <a class="prev" onclick="controlImg(-1)">&#10094;</a>
+                <a class="next" onclick="controlImg(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="imgIndex(1)"></span>
+                <span class="dot" onclick="imgIndex(2)"></span>
+                <span class="dot" onclick="imgIndex(3)"></span>
+            </div>
+        </section> 
     </main>
-    <aside>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-    </aside>
-    <div class="paginacion">
-        <button id="btnAnterior">Anterior</button>
-        <button id="btnSiguiente">Siguiente</button>
-    </div>
+    
+  
    <footer id="footer">footer</footer>
  
 </body>
