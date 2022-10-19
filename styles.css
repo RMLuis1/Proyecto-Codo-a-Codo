@@ -139,7 +139,6 @@ justify-content: center;
 }
 .imgHome{
     position: absolute;
-    top:-40%;
     left: 12%;
     width: 70%;
     height: auto;
@@ -157,7 +156,7 @@ justify-content: center;
 .service{
     max-width:35%;
     height: 150px;
-    margin-top: 30%;
+  
     padding: 10px;
     border: 1px solid rgb(254, 254, 254);
     border-radius: 10px;
@@ -306,8 +305,8 @@ justify-content: center;
     content: '';
     padding: .5em .1em;
     position: relative;
-    left: 0%;
-    width: 40%;
+    left: 30%;
+    width: 20%;
     top: 10%;
     display: block;
     border: 8px solid rgb(178, 178, 178);
@@ -353,7 +352,7 @@ justify-content: center;
             margin: 10px;
             cursor: pointer;
             margin-top:140px;
-            left: 50%;
+           
             max-height: 100vh;
 }
 
@@ -386,7 +385,7 @@ color: rgb(66, 66, 66);
     justify-content: center;
     gap: 20px;
     padding: 10px;
-    margin-top: 0%;
+    
     left: 50%;
 }
 
@@ -439,16 +438,15 @@ color: rgb(66, 66, 66);
  .sectionDiv2 {
     height: 100vh;
     width: 100vw;
-    display: grid;
-        grid-template-columns: repeat(auto-fill, 310px);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 710px);
         gap: 50px;
         justify-content: center;
         object-fit: cover;
 }
 .aboutSer{
-   margin-top:40%;
-   max-width: 250px;
    font-size: 1.5re;
+   padding: 25px;
 }
 /* --------------------------  PROMOCIONES------------------------- */
 #promos{
@@ -703,7 +701,7 @@ font-size: 1rem;
 
     /* --------HOME-------- */
     #home {
-        background-color: rgb(71, 17, 118);
+        /* background-color: rgb(71, 17, 118); */
         width: 100%;
     }
 
@@ -819,7 +817,7 @@ font-size: 1rem;
 
     /* --------HOME-------- */
     #home {
-        background-color: rgb(37, 224, 99);
+        /* background-color: rgb(37, 224, 99); */
         width: 100%;
     }
 
@@ -944,7 +942,7 @@ font-size: 1rem;
     
         /* --------HOME-------- */
         #home {
-            background-color: rgb(224, 37, 155);
+            /* background-color: rgb(224, 37, 155); */
             width: 100%;
         }
     
@@ -1063,12 +1061,61 @@ font-size: 1rem;
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  #home{
-    background-color: #1000bf;
+  .imgHome{
+    top: -20%;
   } 
+.service {
+margin-top: 23%;
+}
+.h2productos:before,
+.h2productos:after {
+        left: 35%;
+    width: 20%;
+    top: 0%;
+
 } 
 
+ .divProduct .productos {
+     text-align: center;
+    left:20vw ;
+     margin: 10px;
+     cursor: pointer;
+ }
+.divProduct .productos .titulo {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.divProduct .productos .price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 1s;
+    margin-top: -10%;
+}
+
+
+.divProduct .productos .poster {
+    width: 110%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 15px;
+}
+ .paginacion{
+    left: center;
+    margin-top: 7%;
+ }
+.sectionDiv2  {
+   
+    margin-left: 10%;
+    margin-top:10%
+}
+ .aboutSer {
+    max-width: 500px;
+ }
+
+ 
 
 
 
 
+}
