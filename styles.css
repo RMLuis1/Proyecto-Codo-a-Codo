@@ -126,7 +126,7 @@ footer{
     width: 100%;
     padding: 5px 0px;
     clear: both;
-    background: #286af0;
+    /* background: #286af0; */
     text-align: center;
     color: #fff;
 }
@@ -590,7 +590,6 @@ color: rgb(66, 66, 66);
     }
 /* --------HOME-------- */
 #home{
-    background-color: red;
     width: 100%;
 }
 .imgHome{
@@ -701,7 +700,6 @@ font-size: 1rem;
 
     /* --------HOME-------- */
     #home {
-        /* background-color: rgb(71, 17, 118); */
         width: 100%;
     }
 
@@ -817,7 +815,6 @@ font-size: 1rem;
 
     /* --------HOME-------- */
     #home {
-        /* background-color: rgb(37, 224, 99); */
         width: 100%;
     }
 
@@ -942,7 +939,6 @@ font-size: 1rem;
     
         /* --------HOME-------- */
         #home {
-            /* background-color: rgb(224, 37, 155); */
             width: 100%;
         }
     
@@ -1120,31 +1116,29 @@ margin-top: 23%;
 
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto:ital@1&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
 .pie-pagina{
+    position: relative;
     width: 100%;
-    background-color:black;
-    padding: 20px;
-
-}
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 0.416);
+   }
 .pie-pagina .grupo-1{
     width: 100%;
+    height: 30%;
     max-width: 1200px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 45px, 0px;
-
+    margin-top: 10%;
+    grid-template-columns: repeat(2, 3fr);
+    }
+.pie-pagina .grupo-1 .box{
+    padding: 20px;
+    max-width: 500px;
+    
 }
 .pie-pagina .grupo-1 .box figure{
-    width: 100%;
+    width: 90%;
     height: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -1170,26 +1164,74 @@ margin-top: 23%;
     width: 45px;
     height: 45px;
     line-height: 45px;
+    border-radius: 10px;
     color: white;
     margin-right: 10px;
-    background-color: #0d2033;
+    background-color:rgba(67, 67, 67, 0.982);
     text-align: center;
     justify-content: center;
     transition: all 300ms ease;
 }
 .pie-pagina .grupo-1 .red-social a:hover{
-    color: aquamarine;
+    color: rgb(0, 0, 0);
 }
 .pie-pagina .grupo-2{
-    background-color: #0a1a2a;
-    padding: 15px, 10px;
+    background-color: #282828;
+    position:absolute;
+   bottom: 0px;
+    line-height: 30px;
+    height: 30px;
+    width: 100%;
     text-align: center;
     color: antiquewhite;
+}
+/* -------FORMULARIO------ */
+
+form {
+    
+    display: grid;
+
+}
+form label{
+    font-size: 20px;
+    padding-right: 15px;
+}
+form input{
+    justify-content: center;
+    background-color:rgba(67, 67, 67, 0.512);
+    border-radius: 8px;
+}
+form input:nth-child(8){
+    height: 60px;
+}
+form input:focus{
+    border: #000000 2px solid;
+}
+form button {
+    color: white;
+    background-color: #282828;
+    border-radius: 10px;
+    font-size: 18px;
+    }
+form button:hover{
+    color: #000000;
+    background-color: #2e2e315d;
 }
 @media screen and (max-width:800px){
     .pie-pagina .grupo-1{
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
-        padding: 35px, 0px;
+        margin-left: auto;
+       
+
     }
+        .pie-pagina .grupo-1 .box figure {
+           margin-top: 20%;
+        }
+        .pie-pagina .grupo-2 {
+        bottom: -230px;
+        }
+                form input {
+                min-width: 150px;
+                }
 }

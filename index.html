@@ -9,8 +9,17 @@
     <script src="index.js" defer></script>
     <script src="api.js" defer></script>
     <script src="carousel.js" defer></script>
+    <script src="form.js" defer></script>
     <!-- Our project just needs Font Awesome Solid + Brands -->
     <script src="https://kit.fontawesome.com/02e94aa0a0.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("XWHnz8XxaCoHcsPM3");
+        })();
+    </script>
 
 </head>
 <body>
@@ -42,17 +51,17 @@
             <div class="checklist-servicio" >
                 <img class="imgHome" src="./imagenes/Logo-PhotoRoom.png" />
                 <div class="service">
-                    <h3><span>1</span>Diseño web</h3>
-                    <p> jasjdajbsdjabsdjas jasdasdhasdja jasdjasdjasdljnasdnasjdasjl</p>
+                    <h3><span><i class="fa-solid fa-square-check"></i></span> Medios de pagos</h3>
+                    <p>Tarjeta de credito, debido, transferencias y depositos.</p>
                     <i class="fa-regular fa-credit-card"></i>
                 </div>
                     <div class="service">
-                        <h3><span>2</span>Envio a todo el Pais</h3>
-                        <p>cooce nuestras promocioes de envio</p><i class="fa-solid fa-truck"></i>
+                        <h3><span><i class="fa-solid fa-square-check"></i></span> Envio a todo el Pais</h3>
+                        <p>conoce nuestras promocioes de envio</p><i class="fa-solid fa-truck"></i>
                     </div>
                         <div class="service">
-                            <h3><span>3</span>Diseño web</h3>
-                            <p> jasjdajbsdjabsdjas jasdasdhasdja jasdjasdjasdljnasdnasjdasjl</p>
+                            <h3><span><i class="fa-solid fa-square-check"></i></span> Descuentos por mayor</h3>
+                            <p>10%, 20%, y hasta un 30% off</p>
                         <i class="fa-solid fa-cart-shopping"></i>
 
                         </div>
@@ -156,23 +165,23 @@
     </main>
     
   
-   <footer id="footer">footer</footer>
-    <footer class="pie-pagina">
+   <!-- <footer >footer</footer> -->
+    <footer id="footer" class="pie-pagina">
         <div class="grupo-1">
             <div class="box">
                 <figure>
                     <a href="#">
-                        <img src="Net Shop-PhotoRoom.png" alt="imgTitulo">
+                        <img src="./imagenes/Net Shop-PhotoRoom.png" alt="imgTitulo">
                     </a>
                 </figure>
             </div>
             <div class="box">
-                <h2>SOBRE NOSOTROS</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, aperiam?</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, aperiam?</p>
+                <h2>CONTACTO</h2>
+                <p>Podes contactarnos por cualquier red social, o enviarnos un email.</p>
+                <p>Tu consulta seran resultas a la brevedad.</p>
             </div>
             <div class="box">
-                <h2>SIGUENOS</h2>
+                <h2>SEGUINOS</h2>
                 <div class="red-social">
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-instagram"></a>
@@ -180,11 +189,27 @@
                     <a href="#" class="fa fa-youtube"></a>
                 </div>
             </div>
-
-        </div>
-        <div class="grupo-2">
-            <small>&copy; 2022 <b>NET SHOP</b>Todos los derechos Reservados</small>
-        </div>
+            <div class="box">
+                <form >
+                    <label>Nombre</label>
+                    <input type="text" id="name" name="name" placeholder="Nombre..." />
+                    <br/>
+                    <label>Email</label>
+                    <input type="email" id="email" name="email" placeholder="email@mail.com" />
+                    <br/>
+                    <label>Mensaje</label>
+                    <input type="text" id="message" placeholder="Mensaje..."/>
+                    <br/>
+                    <button type="submit" onclick="send()" preventDefault>Enviar</button>
+                </form>
+               <span id="errores"></span> 
+            </div>
+        
+               
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2022 <b>NET SHOP </b>Todos los derechos Reservados</small>
+             </div>
     </footer>
  
 </body>
