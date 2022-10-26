@@ -2,7 +2,8 @@ const regex = /\S+@\S+\.\S+/;
 const Toast = Swal.mixin({
   toast: true,
   position: "top-end",
-  background: "#2d2e2fbe",
+  background: "#707070fd",
+  color:"white",
   showConfirmButton: false,
   timer: 3000,
   timerProgressBar: true,

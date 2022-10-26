@@ -601,7 +601,125 @@ color: rgb(66, 66, 66);
 
 /* -------------------------FOOTER----------------- */
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto:ital@1&display=swap');
 
+.pie-pagina {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.416);
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    height: 30%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    margin-top: 10%;
+    grid-template-columns: repeat(2, 3fr);
+}
+
+.pie-pagina .grupo-1 .box {
+    padding: 20px;
+    max-width: 500px;
+
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 90%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: antiquewhite;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: bisque;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social {
+    text-align: center;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 10px;
+    color: white;
+    margin-right: 10px;
+    background-color: rgba(67, 67, 67, 0.982);
+    text-align: center;
+    justify-content: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #282828;
+    position: absolute;
+    bottom: 0px;
+    line-height: 30px;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    color: antiquewhite;
+}
+
+/* -------FORMULARIO------ */
+form {
+
+    display: grid;
+
+}
+
+form label {
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+form input {
+    justify-content: center;
+    background-color: rgba(67, 67, 67, 0.512);
+    border-radius: 8px;
+}
+
+form input:nth-child(8) {
+    height: 60px;
+}
+
+form input:focus {
+    border: #000000 2px solid;
+}
+
+form button {
+    color: white;
+    background-color: #282828;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+form button:hover {
+    color: #000000;
+    background-color: #2e2e315d;
+}
 
 
 
@@ -640,6 +758,7 @@ color: rgb(66, 66, 66);
     max-width: 200px;
     padding: 15px;
     top: 230px;
+    left:-15%
     }
 /* ----------------PRODUCTOS------------ */
 .h2productos{
@@ -696,7 +815,7 @@ letter-spacing: 20px;
 .aboutSer {
     max-width: 300px;
     margin: 0;
-    font-size: .75rem;
+    font-size: .70rem;
 }
 /* -----------------PROMOCIONES---------------------- */
 .promoH2 {
@@ -715,8 +834,28 @@ font-size: 1rem;
     height: 350px;
     border-radius: 10%;
 }
+/* ---------------FOOTER---------------- */
+ .pie-pagina .grupo-1 {
+     width: 100%;
+     grid-template-columns: repeat(1, 1fr);
+     margin-left: auto;
 
 
+ }
+
+ .pie-pagina .grupo-1 .box figure {
+     margin-top: 20%;
+ }
+
+ .pie-pagina .grupo-2 {
+     bottom: -235px;
+     max-width: 100%x;
+     height: auto;
+ }
+
+ form input {
+     min-width: 150px;
+ }
 
 
 }
@@ -731,7 +870,6 @@ font-size: 1rem;
     /* --------HOME-------- */
     #home {
         width: 100%;
-     background-color: re;
     }
 
     .imgHome {
@@ -748,7 +886,7 @@ font-size: 1rem;
         font-size: .9rem;
         max-width: 220px;
         padding: 10px;
-        top: 250px;
+        top: 340px;
     }
 
     /* ----------------PRODUCTOS------------ */
@@ -835,6 +973,27 @@ font-size: 1rem;
         height: 350px;
         border-radius: 10%;
     }
+/* ---------------FOOTER---------------- */
+ .pie-pagina .grupo-1 {
+     width: 100%;
+     grid-template-columns: repeat(1, 1fr);
+     margin-left: 10%;
+
+
+ }
+
+ .pie-pagina .grupo-1 .box figure {
+     margin-top: 20%;
+ }
+
+ .pie-pagina .grupo-2 {
+     bottom: -230px;
+ }
+
+ form input {
+     min-width: 150px;
+ }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -866,7 +1025,7 @@ font-size: 1rem;
         font-size: .9rem;
         max-width: 220px;
         padding: 10px;
-        top: 200px;
+        top: 450px;
     }
 
     /* ----------------PRODUCTOS------------ */
@@ -959,6 +1118,8 @@ font-size: 1rem;
         height: 350px;
         border-radius: 10%;
     }
+    /* -----------------FOOTER----- */
+ 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -971,6 +1132,7 @@ font-size: 1rem;
         /* --------HOME-------- */
         #home {
             width: 100%;
+            
         }
     
         .imgHome {
@@ -990,7 +1152,7 @@ font-size: 1rem;
             font-size: .9rem;
             max-width: 220px;
             padding: 10px;
-            top: 150px;
+            top: 450px;
         }
     
         /* ----------------PRODUCTOS------------ */
@@ -1084,6 +1246,27 @@ font-size: 1rem;
             height: 350px;
             border-radius: 10%;
         }
+/* --------------------FOOTER------------------- */
+ .pie-pagina .grupo-1 {
+     width: 100%;
+     height: 30%;
+     max-width: 1200px;
+     margin: auto;
+     display: grid;
+     margin-top: 10%;
+     grid-template-columns: repeat(2, 3fr);
+ }
+
+ .pie-pagina .grupo-2 {
+     background-color: #282828;
+     position: absolute;
+     bottom: 0px;
+     line-height: 30px;
+     height: 30px;
+     width: 100%;
+     text-align: center;
+     color: antiquewhite;
+ }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -1092,7 +1275,7 @@ font-size: 1rem;
     top: -20%;
   } 
 .service {
-margin-top: 23%;
+margin-top: 1%;
 }
 .h2productos:before,
 .h2productos:after {
@@ -1141,128 +1324,21 @@ margin-top: 23%;
  }
 
  
-
-
-
-
-}
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto:ital@1&display=swap');
-.pie-pagina{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color:rgba(0, 0, 0, 0.416);
-   }
-.pie-pagina .grupo-1{
-    width: 100%;
-    height: 30%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    margin-top: 10%;
-    grid-template-columns: repeat(2, 3fr);
-    }
-.pie-pagina .grupo-1 .box{
-    padding: 20px;
-    max-width: 500px;
-    
-}
-.pie-pagina .grupo-1 .box figure{
-    width: 90%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-.pie-pagina .grupo-1 .box figure img{
-    width: 250px;
-}
-.pie-pagina .grupo-1 .box h2{
-    color: antiquewhite;
-    margin-bottom: 25px;
-    font-size: 20px;
-    text-align: center;
-}
-.pie-pagina .grupo-1 .box p{
-    color: bisque;
-    margin-bottom: 10px;
-}
-.pie-pagina .grupo-1 .red-social{
-    text-align: center;
-}
-.pie-pagina .grupo-1 .red-social a{
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 10px;
-    color: white;
-    margin-right: 10px;
-    background-color:rgba(67, 67, 67, 0.982);
-    text-align: center;
-    justify-content: center;
-    transition: all 300ms ease;
-}
-.pie-pagina .grupo-1 .red-social a:hover{
-    color: rgb(0, 0, 0);
-}
-.pie-pagina .grupo-2{
+.pie-pagina .grupo-2 {
     background-color: #282828;
-    position:absolute;
-   bottom: 0px;
-    line-height: 30px;
-    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    /* line-height: 30px; */
+    /* height: 50px; */
     width: 100%;
     text-align: center;
     color: antiquewhite;
 }
-/* -------FORMULARIO------ */
 
-form {
-    
-    display: grid;
+
 
 }
-form label{
-    font-size: 20px;
-    padding-right: 15px;
-}
-form input{
-    justify-content: center;
-    background-color:rgba(67, 67, 67, 0.512);
-    border-radius: 8px;
-}
-form input:nth-child(8){
-    height: 60px;
-}
-form input:focus{
-    border: #000000 2px solid;
-}
-form button {
-    color: white;
-    background-color: #282828;
-    border-radius: 10px;
-    font-size: 18px;
-    }
-form button:hover{
-    color: #000000;
-    background-color: #2e2e315d;
-}
+
 @media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-        margin-left: auto;
-       
-
-    }
-        .pie-pagina .grupo-1 .box figure {
-           margin-top: 20%;
-        }
-        .pie-pagina .grupo-2 {
-        bottom: -230px;
-        }
-                form input {
-                min-width: 150px;
-                }
+   
 }
